@@ -23,7 +23,8 @@ from keras.optimizers import *
 import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
-import dataset
+# import dataset
+from utils.dataset import dataset
 import argparse
 
 import time
@@ -31,7 +32,7 @@ from datetime import timedelta
 
 
 def build_dataset(data_directory, img_width):
-    X, y, tags = dataset.dataset(data_directory, int(img_width))
+    X, y, tags = dataset(data_directory, int(img_width))
     nb_classes = len(tags)
 
     sample_count = len(y)

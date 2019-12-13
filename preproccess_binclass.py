@@ -74,14 +74,17 @@ def image2dataset(input, label_file):
         # print(os.getcwd())
         if filename is not '':
             for k, v in label_dict.items():
+                # print('v',v)
                 splitname = filename.split("_")
                 f, e = os.path.splitext(filename)
                 # print("[DEBUG] - {}".format(splitname))
+                # print('splitname', splitname)
                 newname = "{}_{}".format(splitname[0], splitname[1])
-                if newname == k:
+                # print('f e ', f, e, newname)
+                if f == k:
                     # print("{} same with {} with v {}".format(filename, k, v))
                     new_name = "{}{}.png".format(v, f)
-
+                    # print('new_name',new_name)
                     os.rename("{}/{}".format(path, filename),
                               "{}/{}".format(path, new_name))
                     break
@@ -93,7 +96,7 @@ def image2dataset(input, label_file):
 
     for filename in os.listdir(path):
         if filename is not '':
-            # print(filename[:1])
+            # print(filename)
             if filename[:1] == "1":
                 move("{}/{}".format(path, filename),
                      "{}/classes/1/{}".format(path, filename))

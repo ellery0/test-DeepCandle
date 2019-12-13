@@ -1,0 +1,21 @@
+=======
+randomforest_model_dataset_dataset_2880TW_20_50
+TN: 144
+FN: 100
+TP: 30
+FP: 56
+TPR: 0.23076923076923078
+FPR: 0.28
+accuracy: 0.527
+specitivity: 0.72
+sensitivity : 0.231
+mcc : -0.055
+              precision    recall  f1-score   support
+
+           0       0.59      0.72      0.65       200
+           1       0.35      0.23      0.28       130
+
+   micro avg       0.53      0.53      0.53       330
+   macro avg       0.47      0.48      0.46       330
+weighted avg       0.50      0.53      0.50       330
+=======

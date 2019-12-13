@@ -1,0 +1,21 @@
+=======
+knn_model_dataset_dataset_2880TW_10_50
+TN: 116
+FN: 74
+TP: 62
+FP: 88
+TPR: 0.45588235294117646
+FPR: 0.43137254901960786
+accuracy: 0.524
+specitivity: 0.569
+sensitivity : 0.456
+mcc : 0.024
+              precision    recall  f1-score   support
+
+           0       0.61      0.57      0.59       204
+           1       0.41      0.46      0.43       136
+
+   micro avg       0.52      0.52      0.52       340
+   macro avg       0.51      0.51      0.51       340
+weighted avg       0.53      0.52      0.53       340
+=======
